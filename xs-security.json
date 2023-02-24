@@ -8,12 +8,12 @@
         }
         ,
         {
-            "name": "$XSAPPNAME.Viewer",
-            "granted-apps": ["$XSAPPNAME(application,)"],
+            "name": "app.Viewer",
+            "granted-apps": ["app(application,)"],
             "description": "Viewer"
         },
         {
-            "name": "$XSAPPNAME.Admin",
+            "name": "app.Admin",
             "description": "Administrator"
         }
     ],
@@ -30,14 +30,14 @@
             "name": "Viewer",
             "description": "Viewer",
             "scope-references": [
-                "$XSAPPNAME.Viewer"
+                "app.Viewer"
             ]
         },
         {
             "name": "Admin",
             "description": "Administrator",
             "scope-references": [
-                "$XSAPPNAME.Admin"
+                "app.Admin"
             ]
         }
     ]
@@ -47,14 +47,14 @@
             "name": "app_Viewer",
             "description": "Viewing access",
             "role-template-references": [
-                "$XSAPPNAME.Viewer"
+                "app.Viewer"
             ]
         },
         {
             "name": "app_Administrator",
             "description": "Administrative access",
             "role-template-references": [
-                "$XSAPPNAME.Admin"
+                "$app.Admin"
             ]
         }
     ]
